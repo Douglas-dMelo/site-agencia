@@ -7,87 +7,104 @@
     <link rel="stylesheet" href="estilos.css" />
 </head>
 
-<body>
+<body class="theme">
 
-    <div id="loader">
-        <span></span>
+    <div class="loader">
+        <span class="loader__spinner"></span>
     </div>
 
-    <canvas id="particles"></canvas>
+    <canvas class="particles"></canvas>
 
     <header class="header">
-        <div class="logo">ACW</div>
+        <div class="header__logo">ACW</div>
 
-        <nav class="nav" id="nav">
-            <a href="#home">Home</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#depoimentos">Depoimentos</a>
-            <a href="#contato">Contato</a>
+        <nav class="nav">
+            <a class="nav__link" href="#home">Home</a>
+            <a class="nav__link" href="#sobre">Sobre</a>
+            <a class="nav__link" href="#servicos">Serviços</a>
+            <a class="nav__link" href="#depoimentos">Depoimentos</a>
+            <a class="nav__link" href="#contato">Contato</a>
         </nav>
 
-        <div class="controls">
-            <button id="themeToggle">🌙</button>
-            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="header__controls">
+            <button class="btn btn--theme" type="button">🌙</button>
+            <button class="nav__toggle" type="button">☰</button>
         </div>
     </header>
 
-    <section id="home" class="banner parallax">
-        <div class="glass box reveal">
-            <h1>Design que impacta</h1>
-            <p>Criamos experiências digitais memoráveis.</p>
-            <button class="btn">Começar projeto</button>
+    <section class="hero">
+        <div class="hero__box glass reveal">
+            <h1 class="hero__title">Design que impacta</h1>
+            <p class="hero__text">
+                Criamos experiências digitais memoráveis.
+            </p>
+            <button class="btn" type="button">Começar projeto</button>
         </div>
     </section>
 
-    <section id="sobre" class="section reveal">
-        <h2>Sobre Nós</h2>
-        <p>
+    <section class="section about">
+        <h2 class="section__title">Sobre Nós</h2>
+        <p class="section__text">
             Somos especialistas em experiências digitais modernas focadas
             em performance e design premium.
         </p>
     </section>
 
-    <section id="servicos" class="section">
-        <h2 class="reveal">Serviços</h2>
+    <section class="section services">
+        <h2 class="section__title">Serviços</h2>
 
         <div class="grid">
-            <div class="card reveal">Design Gráfico</div>
-            <div class="card reveal">Web Design</div>
-            <div class="card reveal">Branding</div>
-            <div class="card reveal">UX/UI</div>
+            <div class="card">Design Gráfico</div>
+            <div class="card">Web Design</div>
+            <div class="card">Branding</div>
+            <div class="card">UX/UI</div>
         </div>
     </section>
 
-    <section id="depoimentos" class="section">
-        <h2 class="reveal">Depoimentos</h2>
+    <section class="section testimonials">
+        <h2 class="section__title">Depoimentos</h2>
 
         <div class="flex">
-            <div class="glass depo reveal">
+            <div class="testimonial glass">
                 Melhor agência que já contratamos.
             </div>
-            <div class="glass depo reveal">
+            <div class="testimonial glass">
                 Design surreal e suporte rápido.
             </div>
-            <div class="glass depo reveal">
+            <div class="testimonial glass">
                 Resultado acima do esperado.
             </div>
         </div>
     </section>
 
-    <section id="contato" class="section">
-        <h2 class="reveal">Contato</h2>
+    <section class="section contact">
+        <h2 class="section__title">Contato</h2>
 
-        <form class="glass form reveal">
-            <input type="text" placeholder="Nome" required />
-            <input type="email" placeholder="Email" required />
-            <textarea placeholder="Mensagem"></textarea>
-            <button type="submit" class="btn">Enviar</button>
+        <form class="form glass">
+            <input
+                class="form__input"
+                type="text"
+                placeholder="Nome"
+                required
+            />
+            <input
+                class="form__input"
+                type="email"
+                placeholder="Email"
+                required
+            />
+            <textarea
+                class="form__textarea"
+                placeholder="Mensagem"
+            ></textarea>
+            <button class="btn" type="submit">Enviar</button>
         </form>
     </section>
 
     <footer class="footer">
-        © 2026 Agência Criativa Web
+        <p class="footer__text">
+            © 2026 Agência Criativa Web
+        </p>
     </footer>
 
     <script src="script.js"></script>
