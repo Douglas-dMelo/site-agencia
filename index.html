@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agência Criativa Web</title>
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+
+    <div id="loader">
+        <span></span>
+    </div>
+
+    <canvas id="particles"></canvas>
+
+    <header class="header">
+        <div class="logo">ACW</div>
+
+        <nav class="nav" id="nav">
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <div class="controls">
+            <button id="themeToggle">🌙</button>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
+    </header>
+
+    <section id="home" class="banner parallax">
+        <div class="glass box reveal">
+            <h1>Design que impacta</h1>
+            <p>Criamos experiências digitais memoráveis.</p>
+            <button class="btn">Começar projeto</button>
+        </div>
+    </section>
+
+    <section id="sobre" class="section reveal">
+        <h2>Sobre Nós</h2>
+        <p>
+            Somos especialistas em experiências digitais modernas focadas
+            em performance e design premium.
+        </p>
+    </section>
+
+    <section id="servicos" class="section">
+        <h2 class="reveal">Serviços</h2>
+
+        <div class="grid">
+            <div class="card reveal">Design Gráfico</div>
+            <div class="card reveal">Web Design</div>
+            <div class="card reveal">Branding</div>
+            <div class="card reveal">UX/UI</div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="section">
+        <h2 class="reveal">Depoimentos</h2>
+
+        <div class="flex">
+            <div class="glass depo reveal">
+                Melhor agência que já contratamos.
+            </div>
+            <div class="glass depo reveal">
+                Design surreal e suporte rápido.
+            </div>
+            <div class="glass depo reveal">
+                Resultado acima do esperado.
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <h2 class="reveal">Contato</h2>
+
+        <form class="glass form reveal">
+            <input type="text" placeholder="Nome" required />
+            <input type="email" placeholder="Email" required />
+            <textarea placeholder="Mensagem"></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        © 2026 Agência Criativa Web
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
