@@ -1,7 +1,7 @@
 <p align="center">
   <img src="assets/banner.png.png" width="100%">
 </p>
-# Agência Criativa Web
+🎨 Agência Criativa Web
 
 Projeto desenvolvido para atividade de curso com objetivo de praticar:
 
