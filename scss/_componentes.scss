@@ -1,0 +1,52 @@
+.header{
+  background:#020617;
+  padding:$espacamento;
+
+  &__content{
+    @include flex-center;
+    justify-content:space-between;
+  }
+
+  &__logo{
+    font-weight:bold;
+    font-size:1.4rem;
+    color:$cor-primaria;
+  }
+}
+
+.nav{
+  &__list{
+    display:flex;
+    gap:$espacamento;
+    list-style:none;
+  }
+
+  &__link{
+    text-decoration:none;
+    color:$cor-texto;
+    transition:.3s;
+
+    &:hover{
+      color:$cor-primaria;
+    }
+  }
+}
+
+.btn{
+  @include botao($cor-primaria, white);
+
+  &--secundario{
+    @include botao($cor-secundaria, white);
+  }
+}
+
+.card{
+  background:$cor-card;
+  padding:$espacamento;
+  border-radius:$radius;
+  text-align:center;
+
+  &__title{
+    margin-bottom:$espacamento / 2;
+  }
+}

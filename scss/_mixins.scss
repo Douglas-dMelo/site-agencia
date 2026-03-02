@@ -1,0 +1,21 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin botao($bg, $color) {
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: $bg;
+  color: $color;
+  font-weight: 600;
+  transition: .3s;
+
+  &:hover{
+    transform: translateY(-3px);
+    opacity: .9;
+  }
+}
